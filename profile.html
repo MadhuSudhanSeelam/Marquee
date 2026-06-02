@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+
+    <script src="https://kit.fontawesome.com/7a35f0f9ec.js" crossorigin="anonymous"></script>
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .box{
+            height:700px;
+            width:600px;
+            border:3px solid black;
+            border-radius: 20px;
+            
+        }
+        
+        .con{
+            border-radius: 20px;
+            height:250px;
+            width:600px;
+            background-color:orange;
+            display:flex;
+            justify-content:center;
+            align-items:flex-end;
+        }
+
+        .profile{
+            height:200px;
+            width:200px;
+            border-end-end-radius:50%;
+            border-start-start-radius:50%;
+            background-image:url("https://media.licdn.com/dms/image/v2/D4E03AQE6-WaskgoKTQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1726124647702?e=1781740800&v=beta&t=AMFeSOc8MoleEBnlBR_9wpjUPDwzMF_jaPsSkJWht-A");
+            background-size: cover;
+            margin-bottom:-20px;
+            border:5px solid orange;
+        }
+        
+        .name{
+            margin-top: 50px;
+            text-align:center;
+        }
+
+        .name h1,
+        .name h4{
+            margin:5px 0;
+        }
+
+        .icons{
+            width:400px;
+            margin:20px auto;
+            display:flex;
+            justify-content:space-evenly;
+            align-items:center;
+        }
+
+        img{
+            height:60px;
+            width:60px;
+        }
+
+        .one{
+            margin-top:30px;
+            height:40px;
+            width:180px;
+            background-color:orange;
+             border-end-end-radius:50px;
+            border-start-start-radius:50px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            font-size:x-large;
+            color:white;
+            cursor:pointer;
+        }
+
+        .on{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            display:flex;
+            align-items:center;
+            gap:15px;
+            font-size:x-large;
+        }
+
+        .icon{
+            margin-top:30px;
+            display:flex;
+            justify-content:center;
+        }
+
+        i{
+            color:black;
+        }
+
+        p{
+            margin:0;
+        }
+        img{
+              border-end-end-radius:50%;
+            border-start-start-radius:50%;
+            /* border: 2px dashed black; */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+
+        <div class="con">
+            <div class="profile"></div>
+        </div>
+
+        <div class="name">
+            <h1>Coding Lab</h1>
+            <h4>Youtuber and Blogger</h4>
+        </div>
+
+        <div class="icons">
+           <div class="icons">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968830.png" alt="Twitter">
+    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
+
+    </div></div>
+
+        <div class="icons">
+            <div class="one">Subscribe</div>
+            <div class="one">Message</div>
+        </div>
+
+        <div class="icon">
+            <div class="on">
+                <i class="fa-regular fa-heart"></i><p>60.4k</p>|
+                <i class="fa-regular fa-comment"></i><p>20k</p>|
+                <i class="fa-solid fa-share fa-flip-horizontal"></i><p>12.4k</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
