@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .con{
+            height: 600px;
+            width: 800px;
+            /* border: 2px solid black; */
+            display: grid;
+            grid-template-rows: repeat(3,1fr);
+            grid-template-columns: repeat(4,1fr);
+            gap:10px;
+            padding: 10px;
+        }
+        .box{
+            display: flex;
+            border: 2px solid red;
+        }
+        #thr{
+            grid-column: 3/5;
+        }
+        #for{
+            grid-column: 1/5;
+        }
+        #six{
+            grid-column: 2/5;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="box" id="one"></div>
+        <div class="box" id="two"></div>
+        <div class="box" id="thr"></div>
+        <div class="box" id="for"></div>
+        <div class="box" id="fiv"></div>
+        <div class="box" id="six"></div>
+    
+    </div>
+</body>
+</html>
