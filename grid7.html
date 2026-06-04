@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+                display: grid;
+                /* grid-template-columns: 200px 1fr 200px;
+                grid-template-rows: 100px 1fr 100px; */
+                grid-template-areas:
+                    "sidebar top top top"
+                    "sidebar user revenue orders"
+                    "sidebar chart chart table"
+                    "sidebar wid wid2 wid3";
+
+                gap: 10px;
+                height: 400px;
+                width: 500px;
+                margin:10px;
+            }
+            .sidebar {
+                grid-area: sidebar;
+                background-color: blue;
+            }
+            .top {
+                grid-area: top;
+                background-color: lightgreen;
+            }
+            .user {
+                grid-area: user;
+                background-color: skyblue;
+            }
+            .revenue {           
+                grid-area: revenue;
+                background-color: greenyellow;
+            }
+            .orders {
+                grid-area: orders;
+                background-color: orange;
+            }
+            .chart {
+                grid-area: chart;
+                background-color: blueviolet;
+            }
+            .table {           
+                grid-area: table;
+                background-color: mediumvioletred;
+            }
+            .wid {           
+                grid-area: wid;
+                background-color: skyblue;
+            }
+            .wid2 {           
+                grid-area: wid2;
+                background-color: skyblue;
+            }
+            .wid3 {           
+                grid-area: wid3;
+                background-color: skyblue;
+            }
+            h1{
+                color: antiquewhite;
+                align-items: center;
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="sidebar"></div>
+            <div class="top"></div>
+            <div class="top"></div>
+            <div class="top"></div>
+            <div class="sidebar"></div>
+            <div class="user"></div>
+            <div class="revenue"></div>
+            <div class="orders"></div>
+            <div class="sidebar"></div>
+            <div class="chart"></div>
+            <div class="chart"></div>
+            <div class="table"></div>
+            <div class="sidebar"></div>
+            <div class="wid"></div>
+            <div class="wid2"></div>
+            <div class="wid3"></div>
+                      
+        </div>
+    </body>
+</html>
